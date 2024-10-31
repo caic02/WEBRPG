@@ -1,0 +1,134 @@
+/* Centraliza todo o conteúdo da página */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Usa a altura total da tela */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Fonte básica e legível */
+    background-color: #f5f5f5; /* Fundo claro e agradável */
+  }
+
+/* Aplica o padrão de não quebrar linhas em todo o documento */
+* {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Estiliza o container da batalha com borda */
+.battle-container {
+  border: 2px solid #333; /* Borda escura e sólida */
+  padding: 20px; /* Espaçamento interno para deixar o conteúdo respirando */
+  border-radius: 10px; /* Bordas levemente arredondadas */
+  background-color: #fff; /* Fundo branco para destaque */
+  text-align: center; /* Centraliza o texto dentro do container */
+  width: auto; /* Largura fixa do container */
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.perfil {
+  display: flex;
+}
+
+  /* Estiliza o título "Batalha" */
+  h1 {
+    font-size: 48px; /* Tamanho grande para destaque */
+    color: #333; /* Cor escura e forte */
+    margin: 0; /* Remove a margem para unir bem ao texto abaixo */
+    text-transform: uppercase; /* Todas as letras em maiúsculo */
+    letter-spacing: 2px; /* Adiciona espaçamento entre as letras para dar estilo */
+  }
+  
+  /* Estiliza o texto "Round X" */
+  .round-contagem {
+    font-size: 18px; /* Tamanho menor */
+    color: #777; /* Cor mais clara para menos destaque */
+    margin-top: 5px; /* Espaço entre o título e o texto */
+  }
+
+.personagem-info {
+  border: 1px solid #333;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+/* Ajusta a estrutura de cada personagem para organizar a imagem e as informações em linha */
+.info-basic {
+  display: flex;  /* Exibe imagem e texto lado a lado */
+  flex-grow: 1;  /* Permite que os contêineres cresçam conforme necessário */
+  margin: 0 10px;  /* Adiciona um pequeno espaçamento entre os contêineres */
+}
+
+/* Estilo para a imagem do personagem */
+.personagem-foto {
+  width: 80px; /* Largura da imagem de perfil */
+  height: 100px; /* Altura da imagem de perfil */
+  object-fit: cover; /* Garante que a imagem se ajuste ao tamanho */
+  border-radius: 4px; /* Bordas levemente arredondadas */
+  margin-right: 15px; /* Espaço entre a imagem e o texto */
+}
+
+/* Estilo para a seção de informações do personagem */
+.personagem-detalhes {
+  display: flex;
+  flex-direction: column; /* Mantém as informações uma abaixo da outra */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estilo para as informações de nível e HP */
+.personagem-detalhes p {
+  font-size: 14px; /* Tamanho menor para o texto adicional */
+  color: #555; /* Cor cinza para menor destaque */
+  margin: 2px 0; /* Pequeno espaçamento entre as linhas */
+}
+
+/* Estilo para o nome do personagem */
+#personagem-nome {
+  font-size: 30px; /* Tamanho maior para destaque */
+  color: #000000; /* Cor escura */
+  margin: 0; /* Margem inferior para separar do restante */
+}
+
+#personagem-info-line {
+  display: flex; /* Usando flexbox para alinhar itens na mesma linha */
+  justify-content: center; /* Centraliza os itens */
+}
+
+/* Estilo para a linha de informações (raça e classe) */
+#personagem-info-line p{
+  align-items: center; /* Alinha os itens verticalmente */
+  font-size: 10px; /* Tamanho da fonte */
+  color: #1f1919; /* Cor do texto */
+  margin: 0 0 5px 0; /* Margem acima e abaixo */
+  margin-right: 10px; /* Adiciona espaço à direita de cada div */
+}
+
+/* Estilo para a linha horizontal separadora */
+.linha-horizontal {
+  width: 100%; /* Linha ocupa toda a largura do container */
+  height: 1px; /* Espessura da linha */
+  background-color: #000; /* Cor da linha */
+  margin-top: 10px; /* Espaçamento entre o conteúdo e a linha */
+  display: block; /* Garante que o elemento seja um bloco completo */
+}
+
+/* Conteiner com os ataques */
+.ataques {
+  display: grid; /* Usa grid para layout */
+  grid-template-columns: repeat(2, 1fr); /* Define 2 colunas de largura igual */
+  padding: 10px; /* Espaçamento interno */
+}
+
+.botoes {
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Muda o cursor para mão ao passar sobre o botão */
+}
+
+/* Efeito ao passar em cima do botão */
+.botoes:hover {
+  color: #68a6e8; /* Cor de fundo ao passar o mouse */
+  border: 2px solid; /* Remove bordas */
+}
